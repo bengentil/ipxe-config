@@ -1,0 +1,7 @@
+#!ipxe
+
+set url http://pxe.gentil.io
+set params install_media=${url}/kayak/kayak_r151025.zfs.bz2,install_config=${url},console=ttyb,ttyb-mode="115200,8,n,1,-"
+kernel ${url}/platform/i86pc/kernel/amd64/unix -B ${params}
+initrd ${url}/platform/i86pc/amd64/boot_archive
+boot
