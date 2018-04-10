@@ -1,7 +1,7 @@
 #!ipxe
 
-set url https://github.com/bengentil/ipxe-config/releases/download/omniosce-r151024l
-set params install_media=${url}/omniosce-r151024l.zfs.bz2,install_config=${url},console=ttyb,ttyb-mode="115200,8,n,1,-"
+set url https://github.com/bengentil/ipxe-config/releases/download/r151025
+set params install_media=${url}/kayak_r151025.zfs.bz2,console=ttyb,ttyb-mode="115200,8,n,1,-"
 kernel ${url}/unix -B ${params}
 initrd ${url}/boot_archive
 boot
